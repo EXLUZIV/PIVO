@@ -20,8 +20,6 @@ $(document).ready(function(){
   var rateText = $("input[name*='rateText']").val();
   var rateFloat = parseFloat(rateText);
 
-  console.log(name);
-
   if(last_numbers_Float>first_numbersFloat){
     last_numbersFloat = (last_numbersFloat - first_numbersFloat)* rateFloat;
       $('#out').append(last_numbersFloat);
